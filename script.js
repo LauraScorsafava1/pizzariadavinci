@@ -217,7 +217,7 @@ const cardapio = [
     { "numero": 43, "nome": "Milho verde 2", "preco": "R$ 57,00", "detalhes": "Milho verde coberto com catupiry" },
     { "numero": 47, "nome": "Palmito", "preco": "R$ 65,00", "detalhes": "Palmito coberto com mussarela" },
     { "numero": 55, "nome": "Rúcula 1", "preco": "R$ 75,00", "detalhes": "Mussarela de búfala com rúcula e tomate seco" },
-    { "numero": 55, "nome": "Rúcula 2", "preco": "R$ 75,00", "detalhes": "Mussarela, rúcula e tomate seco" }
+    { "numero": 56, "nome": "Rúcula 2", "preco": "R$ 75,00", "detalhes": "Mussarela, rúcula e tomate seco" }
   ]
 },
 
