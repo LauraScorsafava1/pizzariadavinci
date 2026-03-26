@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzaria DaVinci</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <!-- Phosphor Icons CDN -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+   <link rel="icon" type="image/x-icon" href="../img/Logo SVG.svg">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════════ -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">
+        <img class="logo-icon" src="../img/Logo SVG.svg" alt="">
+        <span class="logo-text">DaVinci <em>Pizzaria</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#promocao" class="nav-link">Promoção</a>
+        <a href="#cardapio" class="nav-link">Cardápio</a>
+        <a href="#onde-estamos" class="nav-link">Onde Estamos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <a href="https://wa.me/5511985503361" target="_blank" class="btn btn-whatsapp header-cta">
+        <i class="ph-fill ph-whatsapp-logo"></i> Pedir Agora
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#inicio" class="nav-link">Início</a>
+      <a href="#promocao" class="nav-link">Promoção</a>
+      <a href="#cardapio" class="nav-link">Cardápio</a>
+      <a href="#onde-estamos" class="nav-link">Onde Estamos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+      <a href="https://wa.me/5511985503361" target="_blank" class="btn btn-whatsapp">
+        <i class="ph-fill ph-whatsapp-logo"></i> Pedir Agora
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob1"></div>
+      <div class="hero-blob blob2"></div>
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge">🔥 Delivery em até 40 min</span>
+        <h1 class="hero-title">A Pizza<br /><em>Que Você<br />Sonhou</em></h1>
+        <p class="hero-sub">Massa artesanal, ingredientes selecionados e o sabor que só a experiência de anos traz à sua mesa 
+           tradição que vem sendo aperfeiçoada desde 2001, transformando cada prato em um momento especial.</p>
+        <div class="hero-actions">
+          <a href="#cardapio" class="btn btn-primary">
+            <i class="ph ph-book-open-text"></i> Ver Cardápio
+          </a>
+          <a href="https://wa.me/5511985503361" target="_blank" class="btn btn-whatsapp">
+            <i class="ph-fill ph-whatsapp-logo"></i> Pedir no WhatsApp
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>70</strong><span>Sabores</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>25 anos</strong><span>De história</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>⭐ 4.9</strong><span>Avaliação</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="pizza-ring ring1"></div>
+        <div class="pizza-ring ring2"></div>
+        <div class="pizza-emoji">🍕</div>
+        <div class="floating-tag tag1">🧀 Artesanal</div>
+        <div class="floating-tag tag2">🛵 Delivery</div>
+        <div class="floating-tag tag3">🔥 Quente</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       DIFERENCIAIS
+  ═══════════════════════════════════════════════ -->
+  <section class="diferenciais">
+    <div class="container">
+      <div class="dif-grid">
+        <div class="dif-card">
+          <i class="ph-fill ph-fire"></i>
+          <h3>Forno a Lenha</h3>
+          <p>Sabor único e massa crocante por fora, macia por dentro</p>
+        </div>
+        <div class="dif-card">
+          <i class="ph-fill ph-leaf"></i>
+          <h3>Ingredientes Frescos</h3>
+          <p>Selecionados diariamente para garantir a melhor qualidade</p>
+        </div>
+        <div class="dif-card">
+          <i class="ph-fill ph-motorcycle"></i>
+          <h3>Delivery Rápido</h3>
+          <p>Entregamos em até 40 minutos na sua porta</p>
+        </div>
+        <div class="dif-card">
+          <i class="ph-fill ph-heart"></i>
+          <h3>Feita com Amor</h3>
+          <p>Receitas da família, passadas de geração em geração</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       PROMOÇÃO
+  ═══════════════════════════════════════════════ -->
+  <section id="promocao1" class="promocao-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🎉 Imperdível</span>
+        <h2 class="section-title">Promoção 1</h2>
+      </div>
+      <div id="promocao-container"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       CARDÁPIO
+  ═══════════════════════════════════════════════ -->
+  <section id="cardapio" class="cardapio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🍕 Nosso Menu</span>
+        <h2 class="section-title">Cardápio Completo</h2>
+        <p class="section-desc">Pizzas grandes (8 fatias) — escolha seu sabor favorito</p>
+      </div>
+      <div class="tabs-wrapper">
+        <div class="tabs-scroll">
+          <div class="tabs" id="tabs"></div>
+        </div>
+      </div>
+      <div class="cardapio-grid" id="cardapio-items"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       ONDE ESTAMOS / CONTATO
+  ═══════════════════════════════════════════════ -->
+  <section id="onde-estamos" class="onde-section">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">📍 Nos encontre</span>
+        <h2 class="section-title">Onde Estamos</h2>
+      </div>
+      <div class="onde-grid">
+        <div class="onde-info">
+          <!-- Endereço -->
+          <div class="info-card">
+            <div class="info-icon"><i class="ph-fill ph-map-pin"></i></div>
+            <div>
+              <h4>Endereço</h4>
+              <p>Av. Gen. Ataliba Leonel, 3905<br />Tucuruvi, São Paulo – SP<br />CEP 02242-002</p>
+              <a href="https://maps.google.com/?q=Av.+Gen.+Ataliba+Leonel,+3905,+Tucuruvi,+São+Paulo" target="_blank" class="info-link">
+                <i class="ph ph-arrow-square-out"></i> Abrir no Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Horários -->
+          <div class="info-card">
+            <div class="info-icon"><i class="ph-fill ph-clock"></i></div>
+            <div>
+              <h4>Horário de Atendimento</h4>
+              <div class="horario-linha"><span>Terça a Quinta <br> e Domingo</span><strong>18h às 23h</strong></div>
+              <div class="horario-linha"><span>Sexta e Sábado</span><strong>18h às 00h</strong></div>
+              <div class="horario-linha closed"><span>Segunda-feira</span><strong>Fechado</strong></div>
+            </div>
+          </div>
+
+          <!-- Contatos -->
+          <div id="contato" class="info-card">
+            <div class="info-icon"><i class="ph-fill ph-phone"></i></div>
+            <div>
+              <h4>Delivery & Pedidos</h4>
+              <a href="tel:1129497694" class="tel-link"><i class="ph ph-phone"></i> (11) 2949-7694</a>
+              <a href="tel:1129813353" class="tel-link"><i class="ph ph-phone"></i> (11) 2981-3353</a>
+              <a href="https://wa.me/5511985503361" target="_blank" class="tel-link whatsapp">
+                <i class="ph-fill ph-whatsapp-logo"></i> (11) 98550-3361 – WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Redes Sociais -->
+          <div class="info-card social-card">
+            <div class="info-icon"><i class="ph-fill ph-share-network"></i></div>
+            <div>
+              <h4>Redes Sociais</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/share/1CQrcRejhY/?mibextid=wwXIfr" class="social-btn facebook" target="_blank"><i class="ph-fill ph-facebook-logo"></i> Facebook</a>
+                <a href="https://www.instagram.com/davincipizzariatucuruvi?igsh=MTk4bjR1YmtxMTRyZA==" class="social-btn instagram" target="_blank"><i class="ph-fill ph-instagram-logo"></i> Instagram</a>
+                <a href="https://www.tiktok.com/@davincitucuruvi?_r=1&_t=ZS-94zjDHkjo4z" class="social-btn tiktok" target="_blank"><i class="ph-fill ph-tiktok-logo"></i> TikTok</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="mapa-wrapper">
+          <iframe
+            title="Localização La Bella Pizza"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7!2d-46.6!3d-23.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a3dbcdf74ff%3A0x6c3a89c58dfca6a5!2sAv.%20Gen.%20Ataliba%20Leonel%2C%203905%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <a href="https://maps.google.com/?q=Av.+Gen.+Ataliba+Leonel,+3905,+Tucuruvi,+São+Paulo" target="_blank" class="mapa-cta">
+            <i class="ph ph-navigation-arrow"></i> Como Chegar
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA final -->
+      <div class="cta-banner">
+        <div class="cta-text">
+          <h3>Pronto para pedir?</h3>
+          <p>Chame no WhatsApp e receba sua pizza quentinha!</p>
+        </div>
+        <a href="https://wa.me/5511985503361" target="_blank" class="btn btn-whatsapp btn-large">
+          <i class="ph-fill ph-whatsapp-logo"></i> Fazer Pedido Agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">DaVinci <em>Pizza</em></span>
+          <p>Sabor artesanal que aquece o coração desde 2001.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1CQrcRejhY/?mibextid=wwXIfr" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+            <a href="https://www.instagram.com/davincipizzariatucuruvi?igsh=MTk4bjR1YmtxMTRyZA==" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="https://www.tiktok.com/@davincitucuruvi?_r=1&_t=ZS-94zjDHkjo4z" aria-label="TikTok"><i class="ph-fill ph-tiktok-logo"></i></a>
+            <a href="https://wa.me/5511985503361" aria-label="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h5>Navegação</h5>
+          <a href="#inicio">Início</a>
+          <a href="#promocao">Promoção</a>
+          <a href="#cardapio">Cardápio</a>
+          <a href="#onde-estamos">Onde Estamos</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer-links">
+          <h5>Contato</h5>
+          <a href="tel:1129497694">(11) 2949-7694</a>
+          <a href="tel:1129813353">(11) 2981-3353</a>
+          <a href="https://wa.me/5511985503361">WhatsApp</a>
+          <span>Av. Gen. Ataliba Leonel, 3905 - Tucuruvi, São Paulo - SP <br> CEP 02242-002</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 DaVinci Pizzaria. Todos os direitos reservados.</p>
+        <p>Feito com ❤️ e muito molho de tomate.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
