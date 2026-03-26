@@ -365,7 +365,7 @@ const bordasData = {
   tradicionais: [
     {
       icon: "1",
-      nome: "Catupiry Escala",
+      nome: "Catupiry Scala",
       detalhes: "Borda recheada com catupiry cremoso.",
       preco: "R$ 12,00"
     },
