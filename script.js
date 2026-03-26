@@ -6,7 +6,7 @@
 // ─── DADOS: PROMOÇÃO ───────────────────────────
 const promocoes = [
   {
-    emoji: "../img/delicious-pizza-studio-Photoroom.png",
+    emoji: "../img/Promocao1.png",
     badge: "Promoção 01 - Todos os Dias!",
     titulo: "Pizza Grande",
     subtitulo: "Mussarela, calabresa, catupiry scala, escarola 1, baiana, romanesca 1",
@@ -15,7 +15,7 @@ const promocoes = [
     whatsapp: "https://wa.me/5511985503361?text=Gostaria de pedir uma pizza da promoção 01"
   },
   {
-    emoji: "../img/delicious-pizza-studio_1_REMOVE_FUNDO-Photoroom.png",
+    emoji: "../img/Promocao2.png",
     badge: "Promoção 02 - Terças a quintas e domingos!",
     titulo: "Pizza Grande",
     subtitulo: "exceto camarão, camarão c/ catupiry, búfala, davinci, do cliente, aliche, escarola 3, rúcula & romana",
@@ -402,7 +402,7 @@ function renderizarPromocoes() {
       <div class="promo-card">
         <div class="promo-img">
           <div class="promo-img-inner">
-            <img src="${promocao.emoji}" alt="${promocao.titulo}">
+            <img src="${promocao.emoji}">
           </div>
           <span class="promo-badge-img">${promocao.badge}</span>
         </div>
