@@ -18,7 +18,7 @@ const promocoes = [
     emoji: "../img/Promocao2.png",
     badge: "Promoção 02 - Terças a quintas e domingos!",
     titulo: "Pizza Grande",
-    subtitulo: "exceto camarão, camarão c/ catupiry, búfala, davinci, do cliente, aliche, escarola 3, rúcula & romana",
+    subtitulo: "Qualquer pizza de sabor único ou meio a meio (exceto camarão, camarão c/ catupiry, búfala, davinci, do cliente, aliche, escarola 3, rúcula & romana)",
     detalhes: "Pizza brotinho a R$ 35,00",
     preco: "R$ 55,00",
     whatsapp: "https://wa.me/5511985503361?text=Gostaria de pedir uma pizza da promoção 02"
