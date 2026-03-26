@@ -4,16 +4,26 @@
 ═══════════════════════════════════════════════ */
 
 // ─── DADOS: PROMOÇÃO ───────────────────────────
-const promocao = {
-  emoji: "🍕",
-  badge: "🔥 Todos os dias",
-  titulo: "Pizza Grande",
-  subtitulo: "mussarela, calabresa, catupiry escala, escarola 1, baiana, romanesca 1 ",
-  detalhes: "Pizza brotinho a R$ 30,00",
-  preco: "R$ 50,00",
-  whatsapp: "https://wa.me/5511985503361?text=Olá!%20Quero%20pedir%20a%20promoção%20Pizza%20Grande%20%2B%20Refri!"
-};
-
+const promocoes = [
+  {
+    emoji: "../img/delicious-pizza-studio-Photoroom.png",
+    badge: "Promoção 01 - Todos os Dias!",
+    titulo: "Pizza Grande",
+    subtitulo: "Mussarela, calabresa, catupiry scala, escarola 1, baiana, romanesca 1",
+    detalhes: "Pizza brotinho a R$ 30,00",
+    preco: "R$ 50,00",
+    whatsapp: "https://wa.me/5511985503361?text=Gostaria de pedir uma pizza da promoção 01"
+  },
+  {
+    emoji: "../img/delicious-pizza-studio_1_REMOVE_FUNDO-Photoroom.png",
+    badge: "Promoção 02 - Terças a quintas e domingos!",
+    titulo: "Pizza Grande",
+    subtitulo: "exceto camarão, camarão c/ catupiry, búfala, davinci, do cliente, aliche, escarola 3, rúcula & romana",
+    detalhes: "Pizza brotinho a R$ 35,00",
+    preco: "R$ 55,00",
+    whatsapp: "https://wa.me/5511985503361?text=Gostaria de pedir uma pizza da promoção 02"
+  }
+];
 
 // ─── DADOS: CARDÁPIO ───────────────────────────
 const cardapio = [
@@ -212,7 +222,7 @@ const cardapio = [
 },
 
   {
-  "categoria": "Frango",
+  "categoria": "Frangos",
   "itens": [
     {
       "numero": 32,
@@ -350,58 +360,69 @@ const cardapio = [
   ]
 },
 
-  {
-  "categoria": "Bordas Recheadas",
-  "itens": [
+];
+const bordasData = {
+  tradicionais: [
     {
-      "nome": "Catupiry escala",
-      "preco": "R$ 12,00",
-      "detalhes": ""
+      icon: "1",
+      nome: "Catupiry Escala",
+      detalhes: "Borda recheada com catupiry cremoso.",
+      preco: "R$ 12,00"
+    },
+        {
+      icon: "2",
+      nome: "Catupiry Original",
+      detalhes: "Borda recheada com catupiry cremoso.",
+      preco: "R$ 15,00"
     },
     {
-      "nome": "Catupiry original",
-      "preco": "R$ 15,00",
-      "detalhes": ""
+      icon: "3",
+      nome: "Cheddar",
+      detalhes: "Borda cremosa com cheddar especial.",
+      preco: "R$ 15,00"
     },
-    {
-      "nome": "Cheddar",
-      "preco": "R$ 15,00",
-      "detalhes": ""
-    },
-    {
-      "nome": "Chocolate",
-      "preco": "R$ 12,00",
-      "detalhes": ""
+        {
+      icon: "4",
+      nome: "Chocolate",
+      detalhes: "Borda doce recheada com chocolate cremoso.",
+      preco: "R$ 12,00"
     }
   ]
-}
-];
-
+};
 
 // ─── RENDER: PROMOÇÃO ──────────────────────────
-function renderizarPromocao() {
+function renderizarPromocoes() {
   const container = document.getElementById("promocao-container");
   if (!container) return;
 
-  container.innerHTML = `
-    <div class="promo-card">
-      <div class="promo-img">
-        <div class="promo-img-inner">${promocao.emoji}</div>
-        <span class="promo-badge-img">${promocao.badge}</span>
-      </div>
-      <div class="promo-content">
-        <h3 class="promo-title">${promocao.titulo}</h3>
-        <p class="promo-subtitle">${promocao.subtitulo}</p>
-        <p class="promo-details">${promocao.detalhes}</p>
-        <div class="promo-price-block">
-          <span class="promo-preco">${promocao.preco}</span>
+  container.innerHTML = "";
+
+  promocoes.forEach(promocao => {
+    container.innerHTML += `
+      <div class="promo-card">
+        <div class="promo-img">
+          <div class="promo-img-inner">
+            <img src="${promocao.emoji}" alt="${promocao.titulo}">
+          </div>
+          <span class="promo-badge-img">${promocao.badge}</span>
         </div>
-        <a href="${promocao.whatsapp}" target="_blank" class="btn btn-whatsapp btn-large">
-          <i class="ph-fill ph-whatsapp-logo"></i> Pedir Esta Promoção
-        </a>
+
+        <div class="promo-content">
+          <h3 class="promo-title">${promocao.titulo}</h3>
+          <p class="promo-subtitle">${promocao.subtitulo}</p>
+          <p class="promo-details">${promocao.detalhes}</p>
+
+          <div class="promo-price-block">
+            <span class="promo-preco">${promocao.preco}</span>
+          </div>
+
+          <a href="${promocao.whatsapp}" target="_blank" class="btn btn-whatsapp btn-large">
+            <i class="ph-fill ph-whatsapp-logo"></i> Pedir Esta Promoção
+          </a>
+        </div>
       </div>
-    </div>
-  `;
+    `;
+  });
 }
 
 // ─── RENDER: ABAS ──────────────────────────────
@@ -530,9 +551,82 @@ function initActiveNav() {
   });
 }
 
+const slider = document.querySelector('.tabs-scroll');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+});
+
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 2;
+  slider.scrollLeft = scrollLeft - walk;
+});
+
+
+
+function renderizarTabsBordas() {
+  const tabsContainer = document.getElementById("tabs-bordas");
+  if (!tabsContainer) return;
+
+  const categorias = Object.keys(bordasData);
+
+  tabsContainer.innerHTML = categorias.map((categoria, index) => `
+    <button class="tab-btn ${index === 0 ? 'active' : ''}" data-borda="${categoria}">
+      ${categoria.charAt(0).toUpperCase() + categoria.slice(1)}
+    </button>
+  `).join("");
+
+  tabsContainer.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabsContainer.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderizarBordas(btn.dataset.borda);
+    });
+  });
+}
+function renderizarBordas(categoria = "tradicionais") {
+  const container = document.getElementById("bordas-items");
+  if (!container) return;
+
+  const bordas = bordasData[categoria] || [];
+
+  container.innerHTML = bordas.map(borda => `
+    <div class="borda-card">
+      <div class="borda-icon">${borda.icon}</div>
+
+      <div class="borda-info">
+        <h3 class="borda-nome">${borda.nome}</h3>
+        <p class="borda-detalhes">${borda.detalhes}</p>
+
+        <div class="borda-footer">
+          <span class="borda-preco">${borda.preco}</span>
+
+        </div>
+      </div>
+    </div>
+  `).join("");
+}
 // ─── INIT ─────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
-  renderizarPromocao();
+  renderizarBordas();
+  renderizarPromocoes();
   renderizarAbas(cardapio[0].categoria);
   renderizarItens(cardapio[0].categoria);
   initScrollHeader();
