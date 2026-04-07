@@ -10,17 +10,17 @@ const promocoes = [
     badge: "Promoção 01 - Todos os Dias!",
     titulo: "Pizza Grande",
     subtitulo: "Mussarela, calabresa, catupiry scala, escarola 1, baiana, romanesca 1",
-    detalhes: "Pizza brotinho a R$ 30,00",
-    preco: "R$ 50,00",
+    detalhes: "Pizza brotinho a R$ 35,00",
+    preco: "R$ 55,00",
     whatsapp: "https://wa.me/5511985503361?text=Gostaria de pedir uma pizza da promoção 01"
   },
   {
     emoji: "../img/Promocao2.png",
-    badge: "Promoção 02 - Terças a quintas e domingos!",
+    badge: "Promoção 02 - Terças a quintas e domingos! Não é válida em vésperas e feriados",
     titulo: "Pizza Grande",
     subtitulo: "Qualquer pizza de sabor único ou meio a meio (exceto camarão, camarão c/ catupiry, búfala, davinci, do cliente, aliche, escarola 3, rúcula & romana)",
-    detalhes: "Pizza brotinho a R$ 35,00",
-    preco: "R$ 55,00",
+    detalhes: "Pizza brotinho a R$ 40,00",
+    preco: "R$ 60,00",
     whatsapp: "https://wa.me/5511985503361?text=Gostaria de pedir uma pizza da promoção 02"
   }
 ];
@@ -33,25 +33,25 @@ const cardapio = [
     { 
       numero: 38,  
       nome: "Margherita 1",         
-      preco: "R$ 60,00", 
+      preco: "R$ 68,00", 
       detalhes: "Mussarela, parmesão, manjericão fresco e rodelas de tomate" 
     },
     { 
       numero: 39,  
       nome: "Margherita 2",             
-      preco: "R$ 70,00", 
+      preco: "R$ 75,00", 
       detalhes: "Mussarela, parmesão, tomate seco e manjericão fresco" 
     },
     { 
       numero: 45,  
       nome: "Mussarela",            
-      preco: "R$ 50,00", 
+      preco: "R$ 55,00", 
       detalhes: "Mussarela em fatias bem douradas" 
     },
     { 
       numero: 46,  
       nome: "Napolitana",            
-      preco: "R$ 57,00", 
+      preco: "R$ 65,00", 
       detalhes: "Mussarela fatiada, rodelas de tomate e parmesão ralado" 
     }
   ]
@@ -62,61 +62,61 @@ const cardapio = [
     { 
       numero: 2,  
       nome: "Alho e Óleo",               
-      preco: "R$ 58,00", 
+      preco: "R$ 62,00", 
       detalhes: "Mussarela coberta com alho" 
     },
     { 
       numero: 12,  
       nome: "Búfala",          
-      preco: "R$ 70,00", 
+      preco: "R$ 80,00", 
       detalhes: "Mussarela de búfala e tomate seco" 
     },
     { 
       numero: 19,  
       nome: "Catupiry",         
-      preco: "R$ 50,00", 
+      preco: "R$ 55,00", 
       detalhes: "Queijo tipo catupiry e azeitonas" 
     },
     { 
       numero: 33,  
       nome: "Gorgonzola",               
-      preco: "R$ 65,00", 
+      preco: "R$ 70,00", 
       detalhes: "Queijo espinafrado bem derretido" 
     },
     { 
       numero: 34,  
       nome: "Gratinada",          
-      preco: "R$ 70,00", 
+      preco: "R$ 75,00", 
       detalhes: "Provolone, catupiry e parmesão" 
     },
     { 
       numero: 53,  
       nome: "Provolone",         
-      preco: "R$ 60,00", 
+      preco: "R$ 70,00", 
       detalhes: "Fatias de provolone com fatias de tomate" 
     },
     { 
       numero: 59,  
       nome: "Dois queijos",         
-      preco: "R$ 60,00", 
+      preco: "R$ 70,00", 
       detalhes: "Mussarela e catupiry" 
     },
     { 
       numero: 60,  
       nome: "Três queijos",         
-      preco: "R$ 70,00", 
+      preco: "R$ 75,00", 
       detalhes: "Provolone, parmesão e gorgonzola" 
     },
     { 
       numero: 61,  
       nome: "Quatro queijos",         
-      preco: "R$ 75,00", 
+      preco: "R$ 80,00", 
       detalhes: "Mussarela, provolone, parmesão e catupiry" 
     },
     { 
       numero: 62,  
       nome: "Cinco queijos",         
-      preco: "R$ 78,00", 
+      preco: "R$ 82,00", 
       detalhes: "Mussarela, provolone, parmesão, catupiry e gorgonzola" 
     }
   ]
@@ -127,13 +127,13 @@ const cardapio = [
     { 
       numero: 6,  
       nome: "À Moda",               
-      preco: "R$ 65,00", 
+      preco: "R$ 70,00", 
       detalhes: "Lombo, mussarela, rodelas de tomate, catupiry, manjericão e parmesão" 
     },
     { 
       numero: 9,  
       nome: "Bauru",          
-      preco: "R$ 62,00", 
+      preco: "R$ 70,00", 
       detalhes: "Presunto, mussarela e tomate fatiado" 
     },
     { 
@@ -157,7 +157,7 @@ const cardapio = [
     { 
       numero: 40,  
       nome: "Marichela",          
-      preco: "R$ 70,00", 
+      preco: "R$ 75,00", 
       detalhes: "Presunto, mussarela, champignon, bacon e parmesão" 
     },
     { 
@@ -181,19 +181,19 @@ const cardapio = [
     { 
       numero: 51,  
       nome: "Portuguesa",         
-      preco: "R$ 70,00", 
+      preco: "R$ 73,00", 
       detalhes: "Presunto, cebola, ovos coberta com mussarela" 
     },
     { 
       numero: 52,  
       nome: "Premiada",         
-      preco: "R$ 70,00", 
+      preco: "R$ 75,00", 
       detalhes: "Mussarela, bacon, champignon, alcaparras e parmesão" 
     },
     { 
       numero: 57,  
       nome: "Siciliana",         
-      preco: "R$ 70,00", 
+      preco: "R$ 75,00", 
       detalhes: "Mussarela, bacon, champignon, cebola ou manjericão" 
     }
   ]
@@ -202,21 +202,21 @@ const cardapio = [
   {
   "categoria": "Vegetais / Hortiças",
   "itens": [
-    { "numero": 1, "nome": "Abobrinha", "preco": "R$ 65,00", "detalhes": "Mussarela, abobrinha, parmesão e bacon" },
+    { "numero": 1, "nome": "Abobrinha", "preco": "R$ 70,00", "detalhes": "Mussarela, abobrinha, parmesão e bacon" },
     { "numero": 13, "nome": "Brasileirinha", "preco": "R$ 70,00", "detalhes": "Palmito, ervilha e cebolas com mussarela" },
-    { "numero": 14, "nome": "Brócolis 1", "preco": "R$ 70,00", "detalhes": "Brócolis cozido, bacon, salpicado com alho frito e gorgonzola" },
-    { "numero": 15, "nome": "Brócolis 2", "preco": "R$ 65,00", "detalhes": "Brócolis cozido, bacon, salpicado com alho frito coberta com mussarela" },
-    { "numero": 16, "nome": "Brócolis 3", "preco": "R$ 65,00", "detalhes": "Brócolis cozido, bacon, salpicado com alho frito coberta com catupiry" },
-    { "numero": 18, "nome": "Champignon", "preco": "R$ 60,00", "detalhes": "Cogumelos frescos cobertos com mussarela" },
-    { "numero": 27, "nome": "Escarola 1", "preco": "R$ 50,00", "detalhes": "Escarola, alho e bacon" },
-    { "numero": 28, "nome": "Escarola 2", "preco": "R$ 65,00", "detalhes": "Escarola temperada com alho coberta com mussarela e bacon" },
+    { "numero": 14, "nome": "Brócolis 1", "preco": "R$ 75,00", "detalhes": "Brócolis cozido, bacon, salpicado com alho frito e gorgonzola" },
+    { "numero": 15, "nome": "Brócolis 2", "preco": "R$ 70,00", "detalhes": "Brócolis cozido, bacon, salpicado com alho frito coberta com mussarela" },
+    { "numero": 16, "nome": "Brócolis 3", "preco": "R$ 70,00", "detalhes": "Brócolis cozido, bacon, salpicado com alho frito coberta com catupiry" },
+    { "numero": 18, "nome": "Champignon", "preco": "R$ 70,00", "detalhes": "Cogumelos frescos cobertos com mussarela" },
+    { "numero": 27, "nome": "Escarola 1", "preco": "R$ 55,00", "detalhes": "Escarola, alho e bacon" },
+    { "numero": 28, "nome": "Escarola 2", "preco": "R$ 70,00", "detalhes": "Escarola temperada com alho coberta com mussarela e bacon" },
     { "numero": 29, "nome": "Escarola 3", "preco": "R$ 75,00", "detalhes": "Escarola temperada com alho e filé de anchovas com mussarela" },
     { "numero": 30, "nome": "Especial 1", "preco": "R$ 70,00", "detalhes": "Escarola, atum, alho frito e bacon" },
-    { "numero": 31, "nome": "Especial 2", "preco": "R$ 70,00", "detalhes": "Escarola, atum, mussarela, alho e bacon" },
-    { "numero": 42, "nome": "Milho verde 1", "preco": "R$ 57,00", "detalhes": "Milho verde coberto com mussarela" },
-    { "numero": 43, "nome": "Milho verde 2", "preco": "R$ 57,00", "detalhes": "Milho verde coberto com catupiry" },
-    { "numero": 47, "nome": "Palmito", "preco": "R$ 65,00", "detalhes": "Palmito coberto com mussarela" },
-    { "numero": 55, "nome": "Rúcula 1", "preco": "R$ 75,00", "detalhes": "Mussarela de búfala com rúcula e tomate seco" },
+    { "numero": 31, "nome": "Especial 2", "preco": "R$ 75,00", "detalhes": "Escarola, atum, mussarela, alho e bacon" },
+    { "numero": 42, "nome": "Milho verde 1", "preco": "R$ 62,00", "detalhes": "Milho verde coberto com mussarela" },
+    { "numero": 43, "nome": "Milho verde 2", "preco": "R$ 62,00", "detalhes": "Milho verde coberto com catupiry" },
+    { "numero": 47, "nome": "Palmito", "preco": "R$ 70,00", "detalhes": "Palmito coberto com mussarela" },
+    { "numero": 55, "nome": "Rúcula 1", "preco": "R$ 80,00", "detalhes": "Mussarela de búfala com rúcula e tomate seco" },
     { "numero": 56, "nome": "Rúcula 2", "preco": "R$ 75,00", "detalhes": "Mussarela, rúcula e tomate seco" }
   ]
 },
@@ -227,13 +227,13 @@ const cardapio = [
     {
       "numero": 32,
       "nome": "Frango com catupiry",
-      "preco": "R$ 70,00",
+      "preco": "R$ 73,00",
       "detalhes": "Frango desfiado e refogado com catupiry"
     },
     {
       "numero": 35,
       "nome": "Jardineira",
-      "preco": "R$ 70,00",
+      "preco": "R$ 73,00",
       "detalhes": "Frango desfiado e refogado com mussarela"
     }
   ]
@@ -242,19 +242,19 @@ const cardapio = [
   {
   "categoria": "Embutidos / Defumados",
   "itens": [
-    { "numero": 7, "nome": "Bacon", "preco": "R$ 60,00", "detalhes": "Fatias de bacon com mussarela" },
-    { "numero": 8, "nome": "Baiana", "preco": "R$ 50,00", "detalhes": "Calabresa moída, cebola e pimenta" },
-    { "numero": 10, "nome": "Bela itália 1", "preco": "R$ 56,00", "detalhes": "Calabresa moída, ovo e cebola" },
-    { "numero": 11, "nome": "Bela itália 2", "preco": "R$ 60,00", "detalhes": "Calabresa moída, ovo, catupiry e cebola" },
-    { "numero": 17, "nome": "Calabresa", "preco": "R$ 50,00", "detalhes": "Linguiça calabresa coberta com cebola" },
-    { "numero": 20, "nome": "Catupiry com bacon", "preco": "R$ 60,00", "detalhes": "Queijo tipo catupiry e bacon" },
-    { "numero": 37, "nome": "Lombo", "preco": "R$ 60,00", "detalhes": "Lombo canadense defumado com rodas de cebola" },
-    { "numero": 44, "nome": "Modinha", "preco": "R$ 60,00", "detalhes": "Lombo defumado, cebola coberta com catupiry" },
-    { "numero": 50, "nome": "Pepperoni", "preco": "R$ 70,00", "detalhes": "Mussarela e pepperoni" },
-    { "numero": 58, "nome": "Toscana", "preco": "R$ 65,00", "detalhes": "Calabresa moída coberta com mussarela" },
-    { "numero": 64, "nome": "Romanesca 1", "preco": "R$ 50,00", "detalhes": "Calabresa fatiada e vinagrete" },
-    { "numero": 65, "nome": "Romanesca 2", "preco": "R$ 55,00", "detalhes": "Calabresa moída, vinagrete e parmesão" },
-    { "numero": 66, "nome": "Da Mia", "preco": "R$ 70,00", "detalhes": "Mussarela, catupiry, calabresa fatiada e parmesão" }
+    { "numero": 7, "nome": "Bacon", "preco": "R$ 65,00", "detalhes": "Fatias de bacon com mussarela" },
+    { "numero": 8, "nome": "Baiana", "preco": "R$ 55,00", "detalhes": "Calabresa moída, cebola e pimenta" },
+    { "numero": 10, "nome": "Bela itália 1", "preco": "R$ 62,00", "detalhes": "Calabresa moída, ovo e cebola" },
+    { "numero": 11, "nome": "Bela itália 2", "preco": "R$ 65,00", "detalhes": "Calabresa moída, ovo, catupiry e cebola" },
+    { "numero": 17, "nome": "Calabresa", "preco": "R$ 55,00", "detalhes": "Linguiça calabresa coberta com cebola" },
+    { "numero": 20, "nome": "Catupiry com bacon", "preco": "R$ 70,00", "detalhes": "Queijo tipo catupiry e bacon" },
+    { "numero": 37, "nome": "Lombo", "preco": "R$ 65,00", "detalhes": "Lombo canadense defumado com rodas de cebola" },
+    { "numero": 44, "nome": "Modinha", "preco": "R$ 70,00", "detalhes": "Lombo defumado, cebola coberta com catupiry" },
+    { "numero": 50, "nome": "Pepperoni", "preco": "R$ 78,00", "detalhes": "Mussarela e pepperoni" },
+    { "numero": 58, "nome": "Toscana", "preco": "R$ 70,00", "detalhes": "Calabresa moída coberta com mussarela" },
+    { "numero": 64, "nome": "Romanesca 1", "preco": "R$ 55,00", "detalhes": "Calabresa fatiada e vinagrete" },
+    { "numero": 65, "nome": "Romanesca 2", "preco": "R$ 65,00", "detalhes": "Calabresa moída, vinagrete e parmesão" },
+    { "numero": 66, "nome": "Da Mia", "preco": "R$ 80,00", "detalhes": "Mussarela, catupiry, calabresa fatiada e parmesão" }
   ]
 },
 
@@ -264,37 +264,37 @@ const cardapio = [
     {
       "numero": 3,
       "nome": "Aliche",
-      "preco": "R$ 75,00",
+      "preco": "R$ 80,00",
       "detalhes": "Filé de anchovas importadas, rodelas de tomate e parmesão"
     },
     {
       "numero": 4,
       "nome": "Atum",
-      "preco": "R$ 60,00",
+      "preco": "R$ 65,00",
       "detalhes": "Atum temperado e rodelas de cebola"
     },
     {
       "numero": 5,
       "nome": "Americana",
-      "preco": "R$ 70,00",
+      "preco": "R$ 75,00",
       "detalhes": "Atum, palmito, ervilhas coberta com mussarela e cebola"
     },
     {
       "numero": 21,
       "nome": "Camarão",
-      "preco": "R$ 75,00",
+      "preco": "R$ 80,00",
       "detalhes": "Camarão refogado com rodelas de cebola"
     },
     {
       "numero": 22,
       "nome": "Camarão com catupiry",
-      "preco": "R$ 80,00",
+      "preco": "R$ 85,00",
       "detalhes": "Camarão refogado e coberto com catupiry"
     },
     {
       "numero": 54,
       "nome": "Romana",
-      "preco": "R$ 75,00",
+      "preco": "R$ 80,00",
       "detalhes": "Mussarela, rodelas de tomate e filé de anchovas"
     }
   ]
@@ -306,13 +306,13 @@ const cardapio = [
     {
       "numero": 23,
       "nome": "Calzone de catupiry",
-      "preco": "R$ 70,00",
+      "preco": "R$ 75,00",
       "detalhes": "Mussarela, catupiry e presunto"
     },
     {
       "numero": 24,
       "nome": "Calzone de frango",
-      "preco": "R$ 70,00",
+      "preco": "R$ 75,00",
       "detalhes": "Presunto, frango e catupiry"
     }
   ]
@@ -336,25 +336,25 @@ const cardapio = [
     {
       "numero": 67,
       "nome": "Brigadeiro",
-      "preco": "R$ 60,00",
+      "preco": "R$ 65,00",
       "detalhes": "Creme de leite, pasta de brigadeiro, granulado e cereja"
     },
     {
       "numero": 68,
       "nome": "Da época",
-      "preco": "R$ 60,00",
+      "preco": "R$ 65,00",
       "detalhes": "Chocolate com morangos ou cereja"
     },
     {
       "numero": 69,
       "nome": "M&M'S",
-      "preco": "R$ 60,00",
+      "preco": "R$ 65,00",
       "detalhes": "Chocolate com confeitos coloridos"
     },
     {
       "numero": 70,
       "nome": "Sonho de valsa",
-      "preco": "R$ 65,00",
+      "preco": "R$ 70,00",
       "detalhes": "Creme de leite, bombom sonho de valsa e cerejas"
     }
   ]
@@ -367,25 +367,25 @@ const bordasData = {
       icon: "1",
       nome: "Catupiry Scala",
       detalhes: "Borda recheada com catupiry cremoso.",
-      preco: "R$ 12,00"
+      preco: "R$ 15,00"
     },
         {
       icon: "2",
       nome: "Catupiry Original",
       detalhes: "Borda recheada com catupiry cremoso.",
-      preco: "R$ 15,00"
+      preco: "R$ 18,00"
     },
     {
       icon: "3",
       nome: "Cheddar",
       detalhes: "Borda cremosa com cheddar especial.",
-      preco: "R$ 15,00"
+      preco: "R$ 18,00"
     },
         {
       icon: "4",
       nome: "Chocolate",
       detalhes: "Borda doce recheada com chocolate cremoso.",
-      preco: "R$ 12,00"
+      preco: "R$ 15,00"
     }
   ]
 };
